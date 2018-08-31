@@ -1,6 +1,6 @@
 exports.up = (knex, Promise) => {
   return knex.schema.createTable('customers', (table) => {
-    table.uuid('customerID')
+    table.uuid('customerID').primary()
     table.string('firstName').notNullable()
     table.string('lastName').notNullable()
     table.string('email').notNullable().unique()
