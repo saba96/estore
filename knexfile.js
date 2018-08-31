@@ -2,7 +2,7 @@ let path = require('path')
 module.exports = {
   test: {
     client: 'pg',
-    connection: 'postgres://localhost/store',
+    connection: 'postgres://localhost/store_test',
     migrations: {
       directory: path.join(__dirname, '/db/migrations')
     },
@@ -12,7 +12,7 @@ module.exports = {
   },
   development: {
     client: 'pg',
-    connection: 'postgres://localhost/store_test',
+    connection: 'postgres://localhost/store',
     migrations: {
       directory: path.join(__dirname, '/db/migrations')
     },
